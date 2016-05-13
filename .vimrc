@@ -20,8 +20,20 @@ let g:neocomplcache_enable_at_startup = 1
 " Use smartcase.
 let g:neocomplcache_enable_smart_case = 1
 " Set minimum syntax keyword length.
-let g:neocomplcache_min_syntax_length = 3
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+let g:neocomplcache_enable_auto_select = 1
+let g:neocomplcache_enable_fuzzy_completion = 1
+let g:neocomplcache_enable_camel_case_completion = 1
+let g:neocomplcache_enable_underbar_completion = 1
+let g:neocomplcache_fuzzy_completion_start_length = 1
+let g:neocomplcache_auto_completion_start_length = 1
+let g:neocomplcache_auto_completion_start_length = 1
+let g:neocomplcache_manual_completion_start_length = 1
+let g:neocomplcache_min_keyword_length = 3
+let g:neocomplcache_min_syntax_length = 1
+" complete with workds from any opened file
+let g:neocomplcache_same_filetype_lists = {}
+let g:neocomplcache_same_filetype_lists._ = '_'
 
 " Define keyword.
 if !exists('g:neocomplete#keyword_patterns')
@@ -69,15 +81,15 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 
 let g:airline#extensions#tabline#buffer_idx_mode = 1
-nmap 1 <Plug>AirlineSelectTab1
-nmap 2 <Plug>AirlineSelectTab2
-nmap 3 <Plug>AirlineSelectTab3
-nmap 4 <Plug>AirlineSelectTab4
-nmap 5 <Plug>AirlineSelectTab5
-nmap 6 <Plug>AirlineSelectTab6
-nmap 7 <Plug>AirlineSelectTab7
-nmap 8 <Plug>AirlineSelectTab8
-nmap 9 <Plug>AirlineSelectTab9
+nmap <leader>1 <Plug>AirlineSelectTab1
+nmap <leader>2 <Plug>AirlineSelectTab2
+nmap <leader>3 <Plug>AirlineSelectTab3
+nmap <leader>4 <Plug>AirlineSelectTab4
+nmap <leader>5 <Plug>AirlineSelectTab5
+nmap <leader>6 <Plug>AirlineSelectTab6
+nmap <leader>7 <Plug>AirlineSelectTab7
+nmap <leader>8 <Plug>AirlineSelectTab8
+nmap <leader>9 <Plug>AirlineSelectTab9
 
 " 设置切换Buffer快捷键"
 " nnoremap <C-N> :bn<CR>
